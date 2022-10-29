@@ -19,11 +19,8 @@ class Nave:
     def tirosNave(self):
         #Criando animações dos tiros
         if pyxel.btn(pyxel.MOUSE_BUTTON_LEFT):
-            pass
-            # while self.posicaoYtiros > 0:
-            #     pyxel.blt(self.posicaoX, pyxel.height-self.posicaoYtiros, 0, self.desenhoTiros[0], self.desenhoTiros[1], self.desenhoTiros[2], self.desenhoTiros[3], 7)
-            #     pyxel.blt(self.posicaoX+7, pyxel.height-self.posicaoYtiros, 0, self.desenhoTiros[0], self.desenhoTiros[1], self.desenhoTiros[2], self.desenhoTiros[3], 7)
-            #     self.posicaoYtiros += 1
+            pyxel.blt(self.posicaoX, pyxel.height-self.posicaoYtiros, 0, self.desenhoTiros[0], self.desenhoTiros[1], self.desenhoTiros[2], self.desenhoTiros[3], 7)
+            pyxel.blt(self.posicaoX+7, pyxel.height-self.posicaoYtiros, 0, self.desenhoTiros[0], self.desenhoTiros[1], self.desenhoTiros[2], self.desenhoTiros[3], 7)
         """
         Achar um jeito de movimentar as balas até sumirem da tela, mesmo com o botão não pressionado
         """    
